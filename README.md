@@ -57,8 +57,16 @@ Follow these steps to set up and run the project locally:
 The API provides various endpoints to interact with the application's resources:
 
 - **GET `/api/vendors/`**: Retrieve a list of all vendors.
+- **POST `/api/vendors/`**: Create a new Vendor to the database.
+- **GET `/api/vendors/{vendor_id}/`**: Fetch the details for a specific vendor.
+- **PUT `/api/vendors/{vendor_id}/`**: Alter the details for a specific vendor.
+- **DELETE `/api/vendors/{vendor_id}/`**: Delete a specific vendor.
 - **GET `/api/vendors/{vendor_id}/performance/`**: Fetch performance metrics for a specific vendor.
 - **GET `/api/purchase_orders/`**: Retrieve a list of all orders purchased.
+- **POST `/api/purchase_orders/`**: Create a new order for a specfic vendor.
+- **GET `/api/purchase_orders/{po_id}/`**: Fetch the details of a specific order.
+- **PUT `/api/purchase_orders/{po_id}/`**: Alter the details of a specific order.
+- **DELETE `/api/purchase_orders/{po_id}/`**: Delete a specific order by the order id.
 - **POST `/api/purchase_orders/{po_id}/acknowledge/`**: Acknowledge a purchase order.
 
 ## Accessing Admin Panel
