@@ -52,8 +52,30 @@ Follow these steps to set up and run the project locally:
 
 ## Usage
 
-Describe how to use the application here, including API endpoints, admin panel access, and any other relevant details.
+## API Endpoints Usage
 
+The API provides various endpoints to interact with the application's resources:
+
+- **GET `/api/vendors/`**: Retrieve a list of all vendors.
+- **GET `/api/vendors/{vendor_id}/performance/`**: Fetch performance metrics for a specific vendor.
+- **GET `/api/purchase_orders/`**: Retrieve a list of all orders purchased.
+- **POST `/api/purchase_orders/{po_id}/acknowledge/`**: Acknowledge a purchase order.
+
+## Accessing Admin Panel
+
+1. Run the development server.
+2. Go to `http://localhost:8000/admin/` in your browser.
+3. Log in with admin credentials.
+4. Manage vendors, purchase orders, and other related data from the admin panel.
+
+## Swagger API Documentation
+
+- Access API documentation at `http://localhost:8000/api/docs/swagger/`.
+- Explore and test API endpoints using the Swagger UI interface.
+
+## Additional Information
+
+For more details or any issues, contact: manevip17@gmail.com.
 ## Contributing
 
 If you'd like to contribute to this project, please fork the repository, make your changes, and submit a pull request.
